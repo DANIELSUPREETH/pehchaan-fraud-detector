@@ -13,4 +13,4 @@ COPY pehchaan ./pehchaan
 COPY tests ./tests
 COPY pytest.ini .
 
-CMD ["sh", "-c", "python -m pehchaan.generator && python -m uvicorn pehchaan.api.main:app --host 0.0.0.0 --port ${PORT}"]
+CMD ["sh", "-c", "python -m pehchaan.generator && python -m pehchaan.offline --fresh && python -m uvicorn pehchaan.api.main:app --host 0.0.0.0 --port ${PORT}"]
