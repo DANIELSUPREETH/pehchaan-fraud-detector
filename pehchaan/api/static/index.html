@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pehchaan console</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪪</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/">Pehchaan</a>
+    <nav aria-label="Main">
+      <a href="#/" data-nav="overview">Overview</a>
+      <a href="#/rings" data-nav="rings">Review queue</a>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <label for="q" class="visually-hidden">Search by name, phone or email</label>
+      <input id="q" name="q" placeholder="Name, phone or email" autocomplete="off" spellcheck="false">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+<main id="app" class="page" tabindex="-1" aria-live="polite"></main>
+<script src="app.js"></script>
+</body>
+</html>

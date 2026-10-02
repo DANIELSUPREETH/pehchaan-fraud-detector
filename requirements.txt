@@ -1,0 +1,8 @@
+# Core engine (generator, matching, offline mode) uses only the Python standard library.
+# These are for the streaming pipeline, the API and the tests.
+confluent-kafka>=2.4
+psycopg2-binary>=2.9
+fastapi>=0.110
+uvicorn>=0.29
+pytest>=8.0
+httpx>=0.27
